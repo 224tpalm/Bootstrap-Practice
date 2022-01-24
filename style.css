@@ -22,3 +22,8 @@ li a:hover {
   background-color: darkred;
   color: white;
 }
+
+body {
+  width: 1500px;
+  padding-left: 350px;
+}
