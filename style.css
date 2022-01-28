@@ -30,3 +30,7 @@ li a:hover {
   width: 629px;
   height: 600px;
 }
+
+td, th {
+  color: white;
+}
