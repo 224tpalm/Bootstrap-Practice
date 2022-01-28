@@ -1,6 +1,8 @@
 .container-fluid-1{
-  background-color:gainsboro;
+  background-image: url("img/space.jpg");
+  background-size: cover;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
