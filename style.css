@@ -25,3 +25,8 @@ li a:hover {
   background-color: darkred;
   color: white;
 }
+
+.rounded {
+  width: 629px;
+  height: 600px;
+}
