@@ -3,7 +3,7 @@
   background-size: cover;
 }
 
-ul {
+.navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -44,4 +44,9 @@ td, th {
 
 h4 {
   color: indigo;
+}
+
+.picture {
+  height: 700px;
+  width: 700px;
 }
