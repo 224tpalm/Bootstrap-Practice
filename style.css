@@ -51,7 +51,12 @@ h4 {
   width: 700px;
 }
 
-h1 {
+h1,h2 {
   color: #ffef47;
   text-align: center;
+}
+
+.card {
+  padding-left: 100px;
+  padding-right: 100px;
 }
