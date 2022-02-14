@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="container-fluid-1">
+<div class="container-fluid-1">
       <nav class="navbar navbar-expand-sm bg-warning navbar-warning fixed-top">
         <a class="navbar-brand" href="https://www.spotify.com/us/">
           <img src="img\headphones.png" alt="Logo" style="width:40px;" class="rounded-pill">
@@ -70,7 +70,7 @@
   </button>
 </div>
 
-<h4>.</h4>
+
 
     <div class="row">
       <div class="col-md-4 bg-secondary text-white">
@@ -153,18 +153,61 @@
   </div>
 </div>
 
-  <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:100%"></div>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Next page information</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        The next page consists of more images and specific album information. Thank you for viewing!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Who's there?">
+  Knock knock!
+</button>
+
+
+<script>
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+<div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:100%"></div>
 </div>
 
 <ul class="pagination justify-content-center fixed-bottom">
-  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-  <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
-  <li class="page-item"><a class="page-link" href="secondpage.html">2</a></li>
-  <li class="page-item"><a class="page-link" href="thirdpage.html">3</a></li>
-  <li class="page-item"><a class="page-link" href="secondpage.html">Next</a></li>
+<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+<li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+<li class="page-item"><a class="page-link" href="secondpage.html">2</a></li>
+<li class="page-item"><a class="page-link" href="thirdpage.html">3</a></li>
+<li class="page-item"><a class="page-link" href="secondpage.html">Next</a></li>
 </ul>
 
-    </div>
+</div>
   </body>
 </html>
