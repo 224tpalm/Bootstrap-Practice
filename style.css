@@ -39,3 +39,7 @@ h1,h2 {
 li:hover {
   background-color: indigo;
 }
+
+button {
+  padding-left: 300px;
+}

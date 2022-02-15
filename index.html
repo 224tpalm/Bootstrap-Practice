@@ -208,6 +208,39 @@ return new bootstrap.Tooltip(tooltipTriggerEl)
 <li class="page-item"><a class="page-link" href="secondpage.html">Next</a></li>
 </ul>
 
+  <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Type" data-bs-content="An Album">
+    Eternal Atake is...
+  </button>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
+<button type="button" class="btn btn-warning" id="toastbtn">Neon Guts is...</button>
+
+<div class="toast">
+  <div class="toast-header">
+    <strong class="me-auto">Type</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+  </div>
+  <div class="toast-body">
+    <p>Song</p>
+  </div>
+</div>
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function(toastEl) {
+  return new bootstrap.Toast(toastEl)
+})
+toastList.forEach(toast => toast.show())
+}
+</script>
+
 </div>
   </body>
 </html>

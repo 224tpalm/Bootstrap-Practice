@@ -182,7 +182,6 @@
 <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Music">
   This website is about...
 </button>
-</div>
 
 <script>
 // Initialize tooltips
@@ -190,6 +189,42 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+</script>
+
+
+
+  <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Type" data-bs-content="Lil Uzi Vert">
+    This page is about...
+  </button>
+
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
+<button type="button" class="btn btn-warning" id="toastbtn">Paradise is a...</button>
+
+<div class="toast">
+  <div class="toast-header">
+    <strong class="me-auto">Type</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+  </div>
+  <div class="toast-body">
+    <p>Song</p>
+  </div>
+</div>
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function(toastEl) {
+  return new bootstrap.Toast(toastEl)
+})
+toastList.forEach(toast => toast.show())
+}
 </script>
 
     </div>

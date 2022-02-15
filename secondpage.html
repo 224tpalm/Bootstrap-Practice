@@ -176,6 +176,39 @@
   })
   </script>
 
+    <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Type" data-bs-content="A Song">
+      Baby Pluto is...
+    </button>
+
+  <script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+  </script>
+
+  <button type="button" class="btn btn-warning" id="toastbtn">Pink Tape is...</button>
+
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Type</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Not released yet</p>
+    </div>
+  </div>
+
+  <script>
+  document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+  }
+  </script>
+
     </div>
   </body>
   </html>
