@@ -33,6 +33,26 @@
       </form>
       </nav>
 
+      <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Breaking News</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>This is</p>
+          <p>my first ever</p>
+          <p>bootstrap 5 website!</p>
+          <button class="btn btn-secondary" type="button">IMPORTANT</button>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-3">
+        <h3>Right Offcanvas</h3>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          IMPORTANT!
+        </button>
+      </div>
+
       <ul class="pagination justify-content-center fixed-bottom">
         <li class="page-item"><a class="page-link" href="secondpage.html">Previous</a></li>
         <li class="page-item"><a class="page-link" href="index.html">1</a></li>
@@ -234,6 +254,53 @@ toastList.forEach(toast => toast.show())
 <div class="progress">
 <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:100%"></div>
 </div>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Section 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Section 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Section 3</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <img src="img\lil-uzi-vert-vert-vs-world-album-cover.jpg" alt="Los Angeles">
+</div>
+
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <img src="img\lil-uzi-vert-vert-vs-world-album-cover.jpg" alt="Los Angeles">
+</div>
+
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <img src="img\lil-uzi-vert-vert-vs-world-album-cover.jpg" alt="Los Angeles">
+</div>
+
+
+
+
+
+
+
+
 
     </div>
   </body>
